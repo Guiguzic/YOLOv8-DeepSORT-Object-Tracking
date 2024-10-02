@@ -139,7 +139,7 @@ def draw_boxes(img, bbox, names,object_id, identities=None, offset=(0, 0)):
         y2 += offset[1]
 
         # code to find center of bottom edge
-        center = (int((x2+x1)/ 2), int((y2+y2)/2))
+        center = (int((x2+x1)/ 2), int((y1+y2)/2))
 
         # get ID of object
         id = int(identities[i]) if identities is not None else 0
